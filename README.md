@@ -15,8 +15,17 @@ t = int(input())
 for _ in range(t):
     s = input().strip()
     print(is_balanced(s))
-
     
+input:
+{[()]}
+{[(])}
+{{[[(())]]}} 
+
+output:
+YES
+NO
+YES
+
 
 
 #Queue using Two Stacks
@@ -47,6 +56,20 @@ for _ in range(t):
     elif operation[0] == "2":  
         print(queue.dequeue())
 
+input:
+6
+1 42
+1 14
+2
+1 28
+2
+2
+
+output:
+42
+14
+28
+
 
 
 
@@ -75,4 +98,15 @@ for _ in range(t):
     n, m = map(int, input().split()) 
     a = list(map(int, input().split()))  
     b = list(map(int, input().split())) 
-    print(twoStacks(x, a, b))        
+    print(twoStacks(x, a, b))   
+
+
+input:
+1
+10
+4 4
+1 2 3 4
+1 2 3 4
+
+output:
+4
