@@ -1,3 +1,8 @@
+#Name: Rajashree SN
+#USN: 1BM23AI142
+#Section:3C
+
+
 #Balanced Brackets
 def is_balanced(s):
     stack = []
